@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package cpjlaboratoriofinal;
-
+import mx.com.gm.peliculas.domain.ProgramaTV;
+import mx.com.gm.peliculas.domain.Serie;
+import mx.com.gm.peliculas.domain.Podcast;
 import java.util.*;
 import mx.com.gm.peliculas.negocio.CatalogoPeliculas;
 import mx.com.gm.peliculas.negocio.CatalogoPeliculasImpl;
@@ -23,6 +25,13 @@ public class CPJLaboratorioFinal {
     private static final CatalogoPeliculasImpl catalogoPeli= new CatalogoPeliculasImpl();
     
     public static void main(String[] args) {
+        ProgramaTV programa = new ProgramaTV("Tecnología Hoy", "Canal 10", 60);
+        Serie serie = new Serie("Dark", 3, 26);
+        Podcast podcast = new Podcast("Código Abierto", "Juan Pérez", 45);
+
+        System.out.println(programa);
+        System.out.println(serie);
+        System.out.println(podcast);
         
         while(opcion!=0){
           try{
